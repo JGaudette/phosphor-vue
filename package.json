@@ -1,10 +1,10 @@
 {
   "name": "phosphor-vue",
   "version": "4.4.0",
-  "description": "A clean and friendly icon family for Vue, too!",
-  "author": "rektdeckard",
+  "description": "A clean and friendly icon family for Vue3, too!",
+  "author": "jgaudette",
   "license": "MIT",
-  "repository": "phosphor-icons/phosphor-vue",
+  "repository": "jgaudette/phosphor-vue",
   "homepage": "https://phosphoricons.com",
   "main": "dist/phosphor-vue.ssr.js",
   "browser": "dist/esm/entry.js",
