@@ -1,0 +1,34 @@
+/* GENERATED FILE */
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 256 256"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
+    v-bind="$attrs"
+  >
+    <slot />
+    <g v-if="weight === 'bold'"><circle cx="128" cy="96" r="64" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M201.5,169.5a103.9,103.9,0,0,1-147-147" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="96" y1="236" x2="160" y2="236" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="128" y1="200" x2="128" y2="236" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></g>
+    <g v-else-if="weight === 'duotone'"><circle cx="128" cy="96" r="72" opacity="0.2"/><circle cx="128" cy="96" r="72" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M201.5,169.5a103.9,103.9,0,0,1-147-147" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="96" y1="232" x2="160" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="200" x2="128" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
+    <g v-else-if="weight === 'fill'"><circle cx="128" cy="96" r="80"/><path d="M207.2,175.2a8,8,0,0,0-11.3-11.3A96,96,0,0,1,60.1,28.1,8,8,0,1,0,48.8,16.8,112,112,0,0,0,120,207.7V224H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V207.7A111.6,111.6,0,0,0,207.2,175.2Z"/></g>
+    <g v-else-if="weight === 'light'"><circle cx="128" cy="96" r="72" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><path d="M201.5,169.5a103.9,103.9,0,0,1-147-147" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><line x1="96" y1="232" x2="160" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><line x1="128" y1="200" x2="128" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></g>
+    <g v-else-if="weight === 'thin'"><circle cx="128" cy="96" r="72" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/><path d="M201.5,169.5a103.9,103.9,0,0,1-147-147" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/><line x1="96" y1="232" x2="160" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/><line x1="128" y1="200" x2="128" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/></g>
+    <g v-else-if="weight === 'regular'"><circle cx="128" cy="96" r="72" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M201.5,169.5a103.9,103.9,0,0,1-147-147" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="96" y1="232" x2="160" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="200" x2="128" y2="232" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
+  </svg>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
+  props: PropValidator,
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  }
+});
+export default component;
+</script>
