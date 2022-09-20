@@ -10,12 +10,12 @@
     v-bind="$attrs"
   >
     <slot />
-    <g v-if="weight === 'bold'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></g>
-    <g v-else-if="weight === 'duotone'"><polygon points="160 208 80 128 160 48 160 208" opacity="0.2"/><polygon points="160 208 80 128 160 48 160 208" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
+    <g v-if="weight === 'bold'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></g>
+    <g v-else-if="weight === 'duotone'"><polygon points="160 208 80 128 160 48 160 208" opacity="0.2"/><polygon points="160 208 80 128 160 48 160 208" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
     <g v-else-if="weight === 'fill'"><path d="M163.1,40.6a8.4,8.4,0,0,0-8.8,1.7l-80,80a8.1,8.1,0,0,0,0,11.4l80,80A8.3,8.3,0,0,0,160,216a8.5,8.5,0,0,0,3.1-.6A8,8,0,0,0,168,208V48A8,8,0,0,0,163.1,40.6Z"/></g>
-    <g v-else-if="weight === 'light'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></g>
-    <g v-else-if="weight === 'thin'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/></g>
-    <g v-else-if="weight === 'regular'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
+    <g v-else-if="weight === 'light'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></g>
+    <g v-else-if="weight === 'thin'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/></g>
+    <g v-else-if="weight === 'regular'"><polyline points="160 208 80 128 160 48" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
   </svg>
 </template>
 

@@ -16,7 +16,7 @@ function readFile(folder, pathname, weight) {
     .replace(/<svg.*?>/g, "")
     .replace(/<\/svg>/g, "")
     .replace(/<title.*?/, "")
-    .replace(/stroke="#000"/g, ':stroke="displayColor"')
+    .replace(/stroke="#000"/g, ':stroke="color"')
     .replace(
       /<rect width="25[\d,\.]+" height="25[\d,\.]+" fill="none".*?\/>/g,
       ""

@@ -10,12 +10,12 @@
     v-bind="$attrs"
   >
     <slot />
-    <g v-if="weight === 'bold'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></g>
-    <g v-else-if="weight === 'duotone'"><rect x="52" y="52" width="152" height="152" rx="6.9" opacity="0.2"/><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
+    <g v-if="weight === 'bold'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></g>
+    <g v-else-if="weight === 'duotone'"><rect x="52" y="52" width="152" height="152" rx="6.9" opacity="0.2"/><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
     <g v-else-if="weight === 'fill'"><rect x="44" y="44" width="168" height="168" rx="14.9"/></g>
-    <g v-else-if="weight === 'light'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></g>
-    <g v-else-if="weight === 'thin'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/></g>
-    <g v-else-if="weight === 'regular'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
+    <g v-else-if="weight === 'light'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></g>
+    <g v-else-if="weight === 'thin'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/></g>
+    <g v-else-if="weight === 'regular'"><rect x="52" y="52" width="152" height="152" rx="6.9" fill="none" :stroke="color" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
   </svg>
 </template>
 
